@@ -1,21 +1,23 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Passenger {
     private int id;
-    private String firstName;
-    private String lastName;
-    private int phoneNumber;
+    private String name;
     private String email;
+    private int phoneNumber;
+    private ArrayList<Ticket> tickets;
 
     public Passenger() {
     }
 
-    public Passenger(int id, String firstName, String lastName, int phoneNumber, String email) {
+    public Passenger(int id, String name, String email, int phoneNumber, ArrayList<Ticket> tickets) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
+        this.name = name;
         this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.tickets = tickets;
     }
 
     public int getId() {
@@ -26,20 +28,20 @@ public class Passenger {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getPhoneNumber() {
@@ -50,11 +52,11 @@ public class Passenger {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getEmail() {
-        return email;
+    public ArrayList<Ticket> getTickets() {
+        return tickets;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTickets(ArrayList<Ticket> tickets) {
+        this.tickets = tickets;
     }
 }
