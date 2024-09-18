@@ -27,4 +27,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-src/connection/MySQLConnection.class
+/src/connection/MySQLConnection.java
