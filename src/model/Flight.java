@@ -1,2 +1,4 @@
-package model;public class Flight {
+package model;
+
+public class Flight {
 }
