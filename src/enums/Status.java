@@ -1,2 +1,6 @@
-package enums;public enum Status {
+package enums;
+
+public enum Status {
+    BOOKED,
+    CANCELLED;
 }
