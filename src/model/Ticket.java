@@ -1,2 +1,4 @@
-package model;public class Ticket {
+package model;
+
+public class Ticket {
 }
